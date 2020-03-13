@@ -6,8 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(MPI)
 include_directories(SYSTEM ${MPI_INCLUDE_PATH})
 
-add_executable(ECE_420_Assignment_3 main.cpp)
-
 add_executable(q5a q5a.c )
 target_link_libraries(q5a ${MPI_C_LIBRARIES})
 add_executable(q5b q5b.c)
