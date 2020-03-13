@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "mpi.h"
 
 ColMatrixVectorMultiply(int n, double *a, double *b, double *x, MPI_Comm comm) {
     int i, j;

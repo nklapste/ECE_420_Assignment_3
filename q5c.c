@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <math.h>
+#include "mpi.h"
 
 void MatrixVectorMultiply_2D(int n, double *a, double *b, double *x, MPI_Comm comm) {
     int ROW = 0, COL = 1; /* Improve readability */
